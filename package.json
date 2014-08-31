@@ -1,10 +1,11 @@
 {
   "name": "catuara-panozzo",
   "version": "0.1.0",
-  "homepage": "https://github.com/kirrk/catuara-panozzo",
+  "author": "kirrk",
+  "description": "catuara-panozzo healthcare consulting",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

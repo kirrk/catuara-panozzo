@@ -21,7 +21,7 @@
 					<p class="source-org copyright">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 
 				</div>
-            <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/library/js/kk-scripts.js"></script>
+            <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/library/compiled/scripts.js"></script>
 			</footer>
 
 		</div>
