@@ -22,11 +22,13 @@ jQuery.noConflict();
   });
 /* set social media */
   $("#soc-img2").wrap($('<a>', {
-    href: 'https://www.facebook.com/pages/Catuara-Panozzo-Consulting-inc/784655844917769?hc_location=timeline'
+    href: 'https://www.facebook.com/pages/Catuara-Panozzo-Consulting-inc/784655844917769?hc_location=timeline',
+    target: 'new'
   }));
 
   $("#soc-img1").wrap($('<a>', {
-    href: 'https://www.linkedin.com/company/catuara-&-panozzo-consulting-inc-?trk=top_nav_home'
+    href: 'https://www.linkedin.com/company/catuara-&-panozzo-consulting-inc-?trk=top_nav_home',
+    target: 'new'
   }));
 
   $("#soc-img2").hover(function() {

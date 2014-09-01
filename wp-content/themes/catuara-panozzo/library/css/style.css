@@ -1410,7 +1410,11 @@ HEADER STYLES
   background: url('../../imgs/bg.png') repeat-x #1c5eb5;
   padding: 1em 0 2em 0;
 }
-
+@media (max-width: 1200px) {
+ .header {
+  background: #1c5eb5;
+   }
+}
 @media (max-width: 700px) {
  #logo {
     margin-left: 0 !important;
@@ -1418,9 +1422,6 @@ HEADER STYLES
  #logo img {
   width: 10.5em;
   margin-bottom: .8em;
- }
- .header {
-  background: #1c5eb5;
  }
  .social img {
   margin: .5em 0 0 .4em;
@@ -1530,11 +1531,14 @@ margin: -12em 0 0 -6em;
 padding: .4em 0 .4em 1em;
 text-align: left;
 }
-@media (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 1024px) {
   div.main_overlay {
-    font-size: .76em;
+    font-size: .86em;
     margin: -8em 0 0 -3em;
-    width: 99%;
+    height: 3.5em;
+ }
+ div.main_overlay p {
+  width: 85%;
  }
 }
 
@@ -2012,6 +2016,12 @@ you can add resource intensive styles.
     float: left;
     margin: 0 0 0 5em;
   }
+  @media (max-width: 700px) {
+      .col-right {
+    float: left;
+    margin: 2em 0 0 0;
+  }
+}
 
   .hilight {
     color: #a91f29;
