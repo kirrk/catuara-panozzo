@@ -26,7 +26,7 @@ jQuery.noConflict();
   }));
 
   $("#soc-img1").wrap($('<a>', {
-    href: '#'
+    href: 'https://www.linkedin.com/company/catuara-&-panozzo-consulting-inc-?trk=top_nav_home'
   }));
 
   $("#soc-img2").hover(function() {

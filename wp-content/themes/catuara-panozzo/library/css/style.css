@@ -695,6 +695,7 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
+
 @media (max-width: 767px) {
   .m-all {
     float: left;
@@ -1410,6 +1411,30 @@ HEADER STYLES
   padding: 1em 0 2em 0;
 }
 
+@media (max-width: 700px) {
+ #logo {
+    margin-left: 0 !important;
+ }
+ #logo img {
+  width: 10.5em;
+  margin-bottom: .8em;
+ }
+ .header {
+  background: #1c5eb5;
+ }
+ .social img {
+  margin: .5em 0 0 .4em;
+ }
+ div.info {
+   margin: -3em 0 0 2em !important;
+ }
+ h4 {
+  color: #ddd;
+  font-size: .93em;
+  margin: .5em 0 0 .4em;
+ }
+}
+
 #logo {
   margin: 0 5em 0 5.8em;
   width: 40%;
@@ -1417,6 +1442,7 @@ HEADER STYLES
 }
   #logo a {
     color: white; }
+
 
 
 /*********************
@@ -1503,6 +1529,13 @@ font-size: 1.6em;
 margin: -12em 0 0 -6em;
 padding: .4em 0 .4em 1em;
 text-align: left;
+}
+@media (max-width: 700px) {
+  div.main_overlay {
+    font-size: .76em;
+    margin: -8em 0 0 -3em;
+    width: 99%;
+ }
 }
 
 button.learn {
@@ -1947,7 +1980,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1100px) {
   /******************************************************************
   Site Name:
   Author:
@@ -1990,9 +2023,8 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+@media (min-width: 500px) {
   section.social img {
-    width: 35px;
-    height: 35px;
     float: left;
   }
 #inner-header > section > a > img#soc-img1 {
@@ -2008,6 +2040,7 @@ you can add resource intensive styles.
     padding: 0;
     margin: 1em 0 .5em;
   }
+}
   /*********************
   NAVIGATION STYLES
   *********************/

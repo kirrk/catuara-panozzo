@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+
   grunt.initConfig({
     uglify: {
       my_target: {
@@ -9,11 +11,22 @@ module.exports = function(grunt) {
         }//files
       }//my_target
     },//uglify
+    compass: {
+      dev: {
+        options: {
+          config: 'config.rb'
+        } // options
+      }//dev
+    }, //compass
     watch: {
       scripts: {
         files: ['wp-content/themes/catuara-panozzo/library/js/*.js'],
         tasks: ['uglify']
-      }//scripts
+      },//scripts
+      sass: {
+          files: ['wp-content/themes/catuara-panozzo/library/sass/*.scss'],
+          task: ['compass:dev']
+      }, //sass
     } //watch
   }) // initConfig
   grunt.registerTask('default', 'watch');
