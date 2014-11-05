@@ -43,6 +43,7 @@ jQuery.noConflict();
       $(this).css('opacity', '1');
     }
   );
+    $("#content, footer").delay(250).fadeIn(700);
 
 
 })(jQuery);
